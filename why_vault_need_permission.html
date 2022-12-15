@@ -1,0 +1,49 @@
+<head>
+	<style>
+	.fontF{
+		font-family:verdana;
+		font-size:13px;
+	}
+	.fontFHead{
+		font-family:verdana;
+		font-size:14px;
+		color:black;
+	}
+	.ddiv{
+		margin-left:5%;
+		margin-right:5%;
+	}
+	</style>
+	
+</head>
+
+<div class="ddiv">
+<h4 style="font-family:verdana">Why Audio Sound Manager needs "Allow access to all files" permission on Android 11</h4> 
+<p class="fontF" style="color:green">Audio Sound Manager is <b>Secret Gallery vault</b> where you can hide your secret files (photo,video,audio and documents).</p>
+
+<h5 class="fontFHead">Explaination :</h5>
+<p class="fontF">Because of the limitation of GooglePlay, on Android 11 and above devices, apps must require "Allow access to all files" permission to access the files in the external storage. The permission was granted through a permission request dialog on the Android 10 and lower devices.</p>
+
+<p class="fontF">App's core purpose is to encrypt files and folders <b>Disk/Folder Encryption and Locking.</b></p>
+<br>
+<h3 class="fontFHead">Here is the reason why Audio Sound Manager needs permission:</h3>
+<ol>
+<li><p class="fontF">Audio Sound Manager stores the encrypted files in .AudioManagerPlusJJ on external storage. By doing this, the encrypted files will stay there if Audio Sound Manager is uninstalled accidentally and after you install Audio Sound Manager again, Audio Sound Manager can restore the data for you.</p></li>
+
+<li><p class="fontF">If Audio Sound Manager store user's hidden data on app's directory without All Files Access then user lost his data when user uninstalled or accidentally uninstalled app.</p></li>
+
+<li><p class="fontF">Audio Sound Manager supports encrypting any type of files on your external storage. Without permission, it is impossible to add the files on external storage to Audio Sound Manager.</p></li>
+
+<li><p class="fontF">The backup and restore function also needs permission.</p></li>
+</ol>
+<br>
+<p class="fontF">With this permission, The purpose of Audio Sound Manager is to protect your private data.</p>
+
+<p class="fontF">And this is the official explanation: <a href="https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play">https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play</a></p>
+<br>
+<p class="fontF">Thanks for understanding.</p>
+<br>
+<br>
+<br>
+
+</div>
